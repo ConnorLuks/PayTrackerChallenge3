@@ -2,39 +2,44 @@
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data
-const collectEmployees = function(NewEmployee) {
+const collectEmployees = function(newEmployee) {
 // User input is used to create and return an array of employee objects.
-let Employee = true;
-  const NewEmployee = [];
-  while(Employee) {
-  const NewEmployee = {
+  let employee = true;
+  const newEmployees = [];
+  while(employee) {
+    const newEmployee = {
       firstName: prompt("Employees First Name?"),
       lastName: prompt("Employees Last Name?"),
       salary: parseInt(prompt('Please Enter their Salary',"0"),10),
 };
-
-NewEmployee.push(NewEmployee)
-Employee = confirm("Add Another Employee to the list?")
+newEmployees.push(newEmployee)
+employee = confirm("Add Another Employee to the list?")
   }
-  return NewEmployee
-          }
+  return newEmployees
+}
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
 // Calculates and displays the average salary
-  console.log("Finding the Average")
-  const sum = employeesArray.reduce((add, curr) => acc + parseInt(curr.salary), 0); 
-    const average = sum / employeesArray.length;
-    console.log (average);
+console.log("Finding the Average")
+function getAverageSalary(employees) {
+  return employees.reduce((prev, employee) => prev + employee.salary, 0) / employees.length;
+}
+console.log (getAverageSalary(employeesArray))
+alert(`Average Salary:${getAverageSalary(employeesArray)}`)
 }
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
 // Select and displays a random employee
-let rand = employeesArray[ (Math.floor (Math.random() * employeesArray.length))];
-rand1 = rand.firstName;
-rand2 = rand.lastName;
-console.log(rand1,rand2);
+  const partialArray = employeesArray.map(({firstName, lastName}) =>
+  ({firstName: firstName, lastName: lastName}));
+  function getRandomEmployeeName(employees) {
+    return partialArray[ (Math.floor (Math.random() * partialArray.length))];
+  }
+  const randomEmployeeName = partialArray[(Math.floor (Math.random() * partialArray.length))];
+console.log(randomEmployeeName);
+alert(`Random Employee Name: ${randomEmployeeName.firstName} ${randomEmployeeName.lastName}`)
 }
 
 /*
