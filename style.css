@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #a9d1f8;
 }
 
 .wrapper {
@@ -25,9 +25,9 @@ body {
 
 header {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(206, 17%, 16%);
 }
 
 h2 {
@@ -36,7 +36,7 @@ h2 {
 
 .card {
   background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
+  border-radius: 10px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
@@ -51,7 +51,7 @@ h2 {
   display: block;
   width: 100%;
   background: #e7e9eb;
-  height: 2px;
+  height: 6px;
 }
 
 .card-body {
@@ -82,7 +82,7 @@ tbody tr:nth-child(even) {
   display: block;
   width: 100%;
   background: #e7e9eb;
-  height: 2px;
+  height: 6px;
 }
 
 .card-footer::after {
@@ -93,7 +93,7 @@ tbody tr:nth-child(even) {
 
 .btn {
   border: none;
-  background-color: hsl(223, 74%, 48%);
+  background-color: hsl(223, 95%, 45%);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
   color: hsl(0, 0%, 100%);
