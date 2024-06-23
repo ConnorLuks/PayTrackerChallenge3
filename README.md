@@ -33,5 +33,12 @@ End page of listed Employees and Salaries
 Console log information of the program
 ![alt text](Development/Assets/PayrollresultsConsole.png)
 
+## Links to use Pay Tracker
+Repo Link
+https://github.com/ConnorLuks/PayTrackerChallenge3
+
+GitPages Link
+https://connorluks.github.io/PayTrackerChallenge3/
+
 ### Credits
 Connor O'Halloran
